@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/price"
+        android:icon="@drawable/ic_baseline_water_damage_24"
+        android:title="מחיר" />
+    <item
+        android:id="@+id/search"
+        android:label="חיפוש"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="חיפוש" />
+    <item
+        android:id="@+id/ads"
+        android:icon="@android:drawable/stat_notify_chat"
+        android:title="מודעות" />
+    <item
+        android:id="@+id/adver"
+        android:icon="@drawable/ic_baseline_cottage_24"
+        android:title="פירסום" />
+</menu>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/price">
+
+    <fragment
+        android:id="@+id/price"
+        android:name="com.yosss.yourappraiser.Frgment.Apartment_price"
+        android:label="מחיר"
+        tools:layout="@layout/fragment_apartment__price" />
+    <fragment
+        android:id="@+id/search"
+        android:name="com.yosss.yourappraiser.Frgment.Search"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/ads"
+        android:name="com.yosss.yourappraiser.Frgment.Ads"
+        android:label="fragment_ads"
+        tools:layout="@layout/fragment_ads" />
+
+
+</navigation>

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reka1"
+    tools:context=".Frgment.Apartment_price">
+
+
+    <com.github.anastr.speedviewlib.ProgressiveGauge
+        android:id="@+id/speedView"
+
+        android:layout_width="203dp"
+        android:layout_height="129dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline11"
+        app:sv_maxSpeed="3000000"
+        app:sv_speedTextPosition="BOTTOM_RIGHT"
+        app:sv_withTremble="false" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/citys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="עיר"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+        <CheckBox
+            android:id="@+id/haifa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="חיפה"
+            android:textColor="#F3F2F2"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/neiber"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="שכונה" />
+
+        <CheckBox
+            android:id="@+id/bat_galim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#5C5454"
+
+            android:text="בת גלים"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/kiriat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="קרית אליעזר"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/ahdar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="הדר"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/neve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="נווה שאנן"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/ckarmel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FAF7F7"
+
+            android:text="כרמל"
+            android:textColor="#F3EBEB"
+            android:textColorHint="#FAF5F5"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/floor"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="קומה" />
+
+        <CheckBox
+            android:id="@+id/floor10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="10"
+            android:textColor="#F3EBEB"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/floor9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="9"
+            android:textColor="#F8F5F5"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/floor8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="8"
+            android:textColor="#FAF1F1"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/floor7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="7"
+            android:textColor="#EDE5E5"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/floor6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="6"
+            android:textColor="#EDE5E5"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/floor5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="5"
+            android:textColor="#EDE5E5"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/floor4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="4"
+            android:textColor="#EDE5E5"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/floor3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="3"
+            android:textColor="#EDE5E5"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/floor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="2"
+            android:textColor="#EDE5E5"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/floor1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="1"
+            android:textColor="#EDE5E5"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/rooms"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="כמות חדרים" />
+
+        <CheckBox
+            android:id="@+id/rooms5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="5"
+            android:textColor="#F1EDED"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/rooms4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="4"
+            android:textColor="#F1EDED"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/rooms3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="3"
+            android:textColor="#F1EDED"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/rooms2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="2"
+            android:textColor="#F1EDED"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/metrs"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="מטרים" />
+
+        <CheckBox
+            android:id="@+id/met1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="65 - 80"
+            android:textColor="#F3EEEE"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/met2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="80 -95"
+            android:textColor="#F3EEEE"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/met3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="95 -110"
+            android:textColor="#F3EEEE"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/met4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="110 - 125"
+            android:textColor="#F3EEEE"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/met5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="125-135"
+            android:textColor="#EFE9E9"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/met6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="135-150"
+            android:textColor="#EFE9E9"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/luxury"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="דברים נוספים"
+            android:visibility="visible" />
+
+        <CheckBox
+            android:id="@+id/terrace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="מרפסת"
+            android:textColor="#F3ECEC"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/parking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="חניה"
+            android:textColor="#F3ECEC"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/gorden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="גינה"
+            android:textColor="#F3ECEC"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="174dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="100dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/priceOfHome"
+
+        android:layout_width="122dp"
+        android:layout_height="46dp"
+        android:text="מחיר"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <Button
+        android:id="@+id/spot_of_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="לפרסום הדירה"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <TextView
+        android:id="@+id/price1"
+        android:layout_width="157dp"
+        android:layout_height="109dp"
+        android:text="price"
+        android:textColor="#E3DFDF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/spot_of_"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nametest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FDF3F3"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/spot_of_"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

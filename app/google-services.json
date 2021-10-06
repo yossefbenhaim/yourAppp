@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "525395495741",
+    "firebase_url": "https://my-testforchet-default-rtdb.firebaseio.com",
+    "project_id": "my-testforchet",
+    "storage_bucket": "my-testforchet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525395495741:android:47c437ba09179ead365354",
+        "android_client_info": {
+          "package_name": "com.yosss.mytestforchet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525395495741-j8sc3fcbum395hbebkots7p1ctituki4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC55aJgo1IetFbtTn0_icsSB0AQTySe8kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525395495741-j8sc3fcbum395hbebkots7p1ctituki4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525395495741:android:550af89917e84219365354",
+        "android_client_info": {
+          "package_name": "com.yosss.yourappraiser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525395495741-j8sc3fcbum395hbebkots7p1ctituki4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC55aJgo1IetFbtTn0_icsSB0AQTySe8kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525395495741-j8sc3fcbum395hbebkots7p1ctituki4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
