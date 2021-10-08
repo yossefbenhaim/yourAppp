@@ -4,9 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/garr"
 
     tools:context=".screens.Login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.4"
+        android:background="@drawable/circol_tb"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/garr" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -14,17 +28,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.68" />
+
     <EditText
 
 
         android:id="@+id/email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="mobile name"
         android:background="@drawable/edit_text_tb"
+        android:hint="name"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
+        android:textColor="#050505"
+        android:textColorHint="#252121"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,10 +57,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/edit_text_tb"
-        android:hint="passwrd"
+        android:hint="phone"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
+        android:textColor="#050505"
+        android:textColorHint="#252121"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,10 +78,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/edit_text_tb"
-        android:hint="passwrd"
+        android:hint="gender"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
+        android:textColor="#050505"
+        android:textColorHint="#252121"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,6 +102,8 @@
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
+        android:textColor="#050505"
+        android:textColorHint="#252121"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,39 +118,6 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.15" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="שם משתמש"
-        android:textColor="#EAE4E4"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline5"
-        app:layout_constraintVertical_bias="0.021" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#28FFFFFF"
-        android:text="סיסמה"
-        android:textColor="#F8EEEE"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.896"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline5"
-        app:layout_constraintVertical_bias="0.263" />
-
     <Button
         android:id="@+id/contenu"
         android:layout_width="0dp"
@@ -138,10 +128,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.658"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.696"
+        app:layout_constraintVertical_bias="0.691"
         app:layout_constraintWidth_percent=".8" />
 
     <TextView
@@ -149,50 +138,64 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text=" הרשמה"
-        android:textColor="#E1D9D9"
+        android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="36sp"
         android:textStyle="bold"
-        android:visibility="visible"
 
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.197" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="טלפון"
-        android:textColor="#F6EBEB"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        android:layout_marginBottom="60dp"
+        android:elevation="35dp"
+        android:scaleType="center"
+        android:src="@drawable/google"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintHorizontal_bias="0.287"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline5"
-        app:layout_constraintVertical_bias="0.467" />
+        />
 
-    <TextView
-        android:id="@+id/textView5"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/google_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="מגדר"
-        android:textColor="#F1EAEA"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        android:layout_marginBottom="60dp"
+        android:elevation="35dp"
+        android:scaleType="center"
+        android:src="@drawable/google"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline5"
-        app:layout_constraintVertical_bias="0.667" />
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/whatsApp_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:elevation="35dp"
+        android:scaleType="center"
+        android:src="@drawable/google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

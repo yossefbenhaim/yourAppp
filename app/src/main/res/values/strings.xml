@@ -5,6 +5,9 @@
     <string name="title_activity_bottom_navigation">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
+    <string name="slogan_name"></string>
+    <string name="botttum"></string>
+    <string name="powered_by">Your Appraiser</string>
     <string-array name="cities">
         <item>חיפה </item>
         <item>ירושלים</item>

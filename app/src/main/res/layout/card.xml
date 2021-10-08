@@ -8,6 +8,7 @@
     android:gravity="center"
     android:background="@drawable/card_style">
 
+
     <TextView
         android:id="@+id/city_of_card"
         android:layout_width="wrap_content"
@@ -27,7 +28,7 @@
 
         <TextView
             android:id="@+id/text_example"
-            android:layout_width="wrap_content"
+            android:layout_width="154dp"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:textSize="30sp"

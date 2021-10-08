@@ -1,4 +1,4 @@
-package com.yosss.yourappraiser.screens;
+package com.yosss.yourappraiser.recyclerView_for_messange;
 
 public class Card {
 

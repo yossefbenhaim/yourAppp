@@ -19,11 +19,12 @@ import android.widget.Button;
 import android.widget.SearchView;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QuerySnapshot;
-import com.yosss.yourappraiser.screens.Card;
+import com.yosss.yourappraiser.recyclerView_for_messange.Card;
 import com.yosss.yourappraiser.R;
 import com.yosss.yourappraiser.recyclerView_for_messange.RecyclerViewCards;
 
@@ -58,12 +59,13 @@ public class Search<RecyclerViewAdater> extends Fragment {
 
         init();
         getCards();
+        getChatsFromServer();
         recyclerViewAdapter();
 
     }
 
     public void init(){
-        recyclerView = getView().findViewById(R.id.recyclerViewA);
+        recyclerView = getView().findViewById(R.id.recyclerCard);
         metrers = getActivity().findViewById(R.id.metrim_of_card);
         floor_card = getActivity().findViewById(R.id.floor_card);
         rooms_card  = getActivity().findViewById(R.id.rooms_card);
@@ -81,14 +83,35 @@ public class Search<RecyclerViewAdater> extends Fragment {
                 if(error==null){
                     cards=value.toObjects(Card.class);
                 }
-                recyclerViewAdapter();
+                setRecyclerView();
             }
         });
     }
+    public void  getChatsFromServer(){
+        db.
+                collection("cards").get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+            @Override
+            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                cards = (ArrayList<Card>) queryDocumentSnapshots.toObjects(Card.class);
+                 if(cards.size() > 0){
+
+                }
+            setRecyclerView();
+            }
+        });
+    }
+    private void setRecyclerView(){
+        recyclerView = getActivity().findViewById(R.id.recyclerCard);
+        RecyclerView.LayoutManager layoutManager=new LinearLayoutManager(getActivity().getApplicationContext());
+        recyclerView.setLayoutManager(layoutManager);
+        RecyclerViewCards mAdapter = new RecyclerViewCards((ArrayList<Card>) cards);
+        recyclerView.setAdapter(mAdapter);
+    }
     private void recyclerViewAdapter(){
+
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        adapter = (RecyclerViewAdater) new RecyclerViewCards(getContext(),cards);
+        adapter = (RecyclerViewAdater) new RecyclerViewCards(getContext(), (ArrayList<Card>) cards);
         recyclerView.setAdapter((RecyclerView.Adapter) adapter);
     }
 

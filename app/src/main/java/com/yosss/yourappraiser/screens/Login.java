@@ -7,10 +7,15 @@ import androidx.appcompat.app.AppCompatActivity;
         import android.content.Intent;
         import android.content.SharedPreferences;
         import android.os.Bundle;
-        import android.view.View;
-        import android.widget.Button;
+import android.os.Handler;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
         import android.widget.EditText;
-        import android.widget.Toast;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
         import com.google.android.gms.tasks.OnSuccessListener;
         import com.google.firebase.firestore.FirebaseFirestore;
@@ -24,11 +29,14 @@ import java.util.ArrayList;
 
 public class Login extends AppCompatActivity {
 
+    private static int SPLASH_TIMER = 5000;
 
-    private Button conected,chak;
-    private EditText userName,password,phone,gender;
-    private SharedPreferences sharedPreferences;
-    private User globalUser;
+     Button conected;
+     EditText userName,password,phone,gender;
+     SharedPreferences sharedPreferences;
+     User globalUser;
+
+Animation bottun,userName1,password1,phone1,gender1;
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     @Override
@@ -36,6 +44,30 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logine);
         init();
+
+
+
+       userName1 = AnimationUtils.loadAnimation(this,R.anim.test6_anim);
+        password1 = AnimationUtils.loadAnimation(this,R.anim.test7_anim);
+        phone1 = AnimationUtils.loadAnimation(this,R.anim.test8_anim);
+        gender1 = AnimationUtils.loadAnimation(this,R.anim.test9_anim);
+        bottun = AnimationUtils.loadAnimation(this,R.anim.test11_anim);
+
+        conected.setAnimation(bottun);
+        userName.setAnimation(userName1);
+        password.setAnimation(password1);
+        phone.setAnimation(phone1);
+        gender.setAnimation(gender1);
+
+
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(Login.this, "ברוך הבא", Toast.LENGTH_SHORT).show();
+
+            }
+        },SPLASH_TIMER);
     }
 
 
@@ -45,7 +77,7 @@ public class Login extends AppCompatActivity {
 
         userName = findViewById(R.id.email);
         password = findViewById(R.id.pass);
-        chak = findViewById(R.id.contenu);
+
         phone = findViewById(R.id.mobil_num);
         gender = findViewById(R.id.address);
         conected = findViewById(R.id.contenu);

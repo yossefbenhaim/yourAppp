@@ -15,14 +15,14 @@ import android.widget.Toast;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
-import com.yosss.yourappraiser.screens.Card;
+
 import com.yosss.yourappraiser.R;
 
 import java.util.ArrayList;
 
 public class RecyclerViewCards extends RecyclerView.Adapter<RecyclerViewCards.ViewHolder> implements Filterable {
 
-    private List<Card> list;
+    private ArrayList<Card> list;
     private List<Card> fullList; //for search option
     private LayoutInflater mInflater;
     ItemClickListener mClickListener;
@@ -31,7 +31,7 @@ public class RecyclerViewCards extends RecyclerView.Adapter<RecyclerViewCards.Vi
 
     // data is passed into the constructor
 
-    public RecyclerViewCards(Context context, List<Card> list) {
+    public RecyclerViewCards(Context context, ArrayList<Card> list) {
 
         this.context = context;
         this.mInflater = LayoutInflater.from(context);
@@ -42,9 +42,11 @@ public class RecyclerViewCards extends RecyclerView.Adapter<RecyclerViewCards.Vi
         fullList.addAll(list);
     }
 
+    public RecyclerViewCards(ArrayList<Card> cards) {
+    }
 
 
-       // inflates the row layout from xml when needed
+    // inflates the row layout from xml when needed
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = mInflater.inflate(R.layout.card, parent, false);
@@ -60,13 +62,13 @@ public class RecyclerViewCards extends RecyclerView.Adapter<RecyclerViewCards.Vi
         holder.button.setOnClickListener(v -> Toast.makeText(context, "button in card number " + position, Toast.LENGTH_SHORT).show());
     }
 
-       @Override
-       public int getItemCount() {
-           return list.size();
-       }
+    @Override
+    public int getItemCount() {
+        return list.size();
+    }
 
 
-       // parent activity will implement this method to respond to click events
+    // parent activity will implement this method to respond to click events
     public interface ItemClickListener {
         void onItemClick(View view, int position);
     }

@@ -5,143 +5,193 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/cityarr"
+
+
     tools:context=".Frgment.price_card">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.4"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/reka2" />
 
     <EditText
         android:id="@+id/fool_name1"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/edit_text_tb"
         android:ems="10"
         android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingTop="30dp"
         android:text="שם מלא"
-        android:textColor="#E44848"
+        android:textColor="#0C0A0A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintHorizontal_bias="0.052"
+
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline6"
-        app:layout_constraintVertical_bias="0.018" />
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
 
     <EditText
         android:id="@+id/phone_of_card"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/edit_text_tb"
         android:ems="10"
         android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingTop="30dp"
         android:text="טלפון"
-        android:textColor="#E44848"
+        android:textColor="#0C0A0A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.208" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <EditText
         android:id="@+id/cite1"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_tb"
         android:ems="10"
         android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingTop="30dp"
         android:text="עיר"
-        android:textColor="#E44848"
+        android:textColor="#0C0A0A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292" />
+        app:layout_constraintVertical_bias="0.301" />
 
     <EditText
         android:id="@+id/neighborhood1"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_tb"
         android:ems="10"
         android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingTop="30dp"
         android:text="רחוב הדירה"
-        android:textColor="#E44848"
+        android:textColor="#0C0A0A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375" />
+
+        app:layout_constraintVertical_bias="0.38" />
 
     <EditText
         android:id="@+id/metrim1"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_tb"
         android:ems="10"
         android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingTop="30dp"
         android:text="מטרים"
-        android:textColor="#E44848"
+        android:textColor="#0C0A0A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.461" />
+        app:layout_constraintVertical_bias="0.46" />
 
     <EditText
         android:id="@+id/floor_of_card1"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_tb"
         android:ems="10"
         android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingTop="30dp"
         android:text="קומה"
-        android:textColor="#E44848"
+        android:textColor="#0C0A0A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.547" />
+        app:layout_constraintVertical_bias="0.539" />
 
     <EditText
         android:id="@+id/rooms_of_card1"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_tb"
         android:ems="10"
         android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingTop="30dp"
         android:text="חדרים"
-        android:textColor="#E44848"
+        android:textColor="#0C0A0A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.634" />
+        app:layout_constraintVertical_bias="0.631" />
 
     <EditText
         android:id="@+id/luxuly_card1"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_tb"
         android:ems="10"
         android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingTop="30dp"
         android:text="דברים נוספים"
-        android:textColor="#E44848"
+        android:textColor="#0C0A0A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.719" />
+        app:layout_constraintVertical_bias="0.714" />
 
     <EditText
         android:id="@+id/on_home1"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/edit_text_tb"
         android:ems="10"
+        android:gravity="center_vertical"
         android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingTop="30dp"
         android:text="על הדירה"
-        android:textColor="#E44848"
+        android:textColor="#0C0A0A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/fool_name1"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.809" />
+        app:layout_constraintVertical_bias="0.797" />
 
     <TextView
         android:id="@+id/textView6"
@@ -149,21 +199,104 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:text="פרסם את הדירה   "
-        android:textColor="#C51E1E"
+        android:textColor="#131010"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline12"
+
+    <Button
+        android:id="@+id/ad"
+        android:layout_width="164dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:text="פרסם"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/on_home1"
+        app:layout_constraintVertical_bias="0.269" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7" />
+        android:elevation="35dp"
+        android:scaleType="center"
+        android:src="@drawable/emal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.558" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/whatsapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="35dp"
+        android:scaleType="center"
+        android:src="@android:drawable/ic_menu_call"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/en"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="35dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_dashboard_black_24dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="35dp"
+        android:scaleType="center"
+        android:src="@android:drawable/ic_menu_manage"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ploos100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="35dp"
+        android:scaleType="center"
+        android:src="@android:drawable/ic_menu_add"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
@@ -171,18 +304,5 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.1" />
-
-    <Button
-        android:id="@+id/ad"
-        android:layout_width="160dp"
-        android:layout_height="67dp"
-        android:text="פרסם"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/on_home1"
-        app:layout_constraintVertical_bias="0.378" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
