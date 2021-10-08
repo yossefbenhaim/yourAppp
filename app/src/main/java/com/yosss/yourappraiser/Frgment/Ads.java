@@ -32,6 +32,7 @@ import com.yosss.yourappraiser.screens.MainActivity;
 import java.util.ArrayList;
 import java.util.Date;
 
+
 public class Ads extends Fragment {
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
